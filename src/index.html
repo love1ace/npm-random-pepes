@@ -1,80 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Pepe Image</title>
-</head>
-<body>
-<h1>Random Pepe Image</h1>
-<script>
-    const baseUrl = 'https://love1ace.github.io/random-pepes/img/';
-    const directories = [
-        { name: 'img_1', min: 1, max: 1000 },
-        { name: 'img_2', min: 1001, max: 2000 },
-        { name: 'img_3', min: 2001, max: 3000 },
-        { name: 'img_4', min: 3001, max: 4000 },
-        { name: 'img_5', min: 4001, max: 5000 },
-        { name: 'img_6', min: 5001, max: 5107 }
-    ];
-    const extensions = ['jpg', 'png', 'gif']; // 가능한 확장자 목록
-
-    // 랜덤 숫자 생성 함수
-    function getRandomNumber(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-    }
-
-    // 랜덤 확장자 선택 함수
-    function getRandomExtension() {
-        const randomIndex = Math.floor(Math.random() * extensions.length);
-        return extensions[randomIndex];
-    }
-
-    // 랜덤 디렉토리 선택 함수
-    function getRandomDirectory() {
-        const randomIndex = Math.floor(Math.random() * directories.length);
-        return directories[randomIndex];
-    }
-
-    // 랜덤 이미지 URL 생성 함수
-    function getRandomImageUrl() {
-        const randomDirectory = getRandomDirectory();
-        const randomNumber = getRandomNumber(randomDirectory.min, randomDirectory.max);
-        const randomExtension = getRandomExtension();
-        return `${baseUrl}${randomDirectory.name}/pepe${randomNumber}.${randomExtension}`;
-    }
-
-    // 이미지를 로드하고 DOM 추가하는 함수
-function loadRandomImage() {
-    const randomDirectory = getRandomDirectory();
-    const randomNumber = getRandomNumber(randomDirectory.min, randomDirectory.max);
-
-    // 확장자별로 이미지 로드 시도
-    for (let i = 0; i < extensions.length; i++) {
-        const imageUrl = `${baseUrl}${randomDirectory.name}/pepe${randomNumber}.${extensions[i]}`;
-        const img = new Image();
-
-        img.onload = function() {
-            // 이미지 로드 성공 시, 이미지와 확장자를 웹페이지에 추가
-            document.body.appendChild(img);
-        };
-
-        img.onerror = function() {
-            // 이미지 로드 실패 시, 다음 확장자로 시도
-            console.log(`Failed to load image with extension: ${extensions[i]}`);
-        };
-
-        img.src = imageUrl;
-        img.alt = "Random Image";
-
-        // 이미지 로드 성공 시, 루프 종료
-        if (img.complete) {
-            break;
-        }
-    }
-}
-    // 페이지 로드 시 랜덤 이미지 로드
-    window.onload = loadRandomImage;
-</script>
-</body>
+  </head>
+  <body>
+    <h1>Random Pepe Image</h1>
+    <div class="image-container"></div>
+    <script src="./main.js" type="module"></script>
+  </body>
 </html>
