@@ -8,5 +8,9 @@
   "keywords": ["sample", "npm", "package"],
   "author": "love1ace <lovelacedud@gmail.com>, kimpra2989 <dustmqaksdltkfrlfdldi@gmail.com>",
   "license": "MIT",
-  "description": ""
+  "description": "A package to get random Pepe images",
+  "bugs": {
+    "url": "https://github.com/love1ace",
+    "email": "lovelacedud@gmail.com"
+  }
 }
