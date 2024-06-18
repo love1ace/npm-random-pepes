@@ -1,10 +1,10 @@
-<div style="font-size: 64px;">You</div>
-<div style="font-size: 64px;">Can</div>
-<div style="font-size: 64px;">Get</div>
-<div style="font-size: 64px;">Thousands</div>
-<div style="font-size: 64px;">of</div>
-<div style="font-size: 64px;">Pepe</div>
-
+# You
+# Can
+# Get
+# Thousands
+# of
+# Pepe
+# Memes
 ![cheers](/pepe-cheers.gif)
 
 
