@@ -1,0 +1,12 @@
+{
+  "name": "random-pepes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["sample", "npm", "package"],
+  "author": "love1ace <lovelacedud@gmail.com>, kimpra2989 <dustmqaksdltkfrlfdldi@gmail.com>",
+  "license": "MIT",
+  "description": ""
+}
