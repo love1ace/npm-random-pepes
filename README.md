@@ -24,11 +24,11 @@ yarn add random-pepes
 ## Usage
 
 ```js
-import RandomPepe from "random-pepe";
+import RandomPepe from "./node_modules/random-pepes/src/index.js";
 
 window.onload = function() {
-  const Container = document.querySelector('.image-container');
-  RandomPepe(Container);
+    const Container = document.querySelector('.image-container');
+    RandomPepe(Container);
 };
 ```
 
