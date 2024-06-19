@@ -14,11 +14,11 @@
 
 ## Installing 
 ```
-npm install random-pepe
+npm install random-pepes
 
 or
 
-yarn add random-pepe
+yarn add random-pepes
 ```
 
 ## Usage
